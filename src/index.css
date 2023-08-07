@@ -1,13 +1,79 @@
 body {
+  font-size: 20px;
+  font-family: Share Tech Mono, monospace;
+  background-color: #f9dbbd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.calculator {
+  background-color: aliceblue;
+  height: 40vh;
+  width: 30vh;
+  min-height: 200px;
+  min-width: 100px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  border: 5px black solid;
+  overflow: hidden;
+  padding: 2px;
+  max-width: 200px;
+  border-top: 0px;
+  font-style: italic; 
+}
+
+.btn{
+  color: #463f3a;
+  border: 1px black solid;
+  padding: 2px; /* Add padding to create space within cells */
+  border: 1px solid #000; /* Add borders to distinguish cells */
+  text-align: center;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.zero, .AC{
+  grid-row: span 2;
+}
+
+.span2h{
+  grid-column: span 2;
+}
+
+.span2v {
+  grid-row: span 2;
+}
+
+.display {
+  font-family: 'Calculator', sans-serif;
+  text-align: right;
+  background-color: black;
+  color: orange;
+  border: white 5px solid;
+  border-bottom: black 0px solid;
+  padding-right: 2px;
+  height: 30px;
+  padding-top: 15px;
+}
+
+.signature {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #999;
+}
+
+
+
